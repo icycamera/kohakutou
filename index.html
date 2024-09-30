@@ -113,3 +113,35 @@
 
 </body>
 </html>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+    // Get the form data
+    const formData = new FormData(this);
+
+    // Display a loading message
+    document.getElementById('form-status').textContent = "Sending message...";
+
+    // Send the form data using fetch (AJAX request)
+    fetch('https://your-backend-endpoint.com/contact', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('form-status').textContent = "Message sent successfully!";
+            document.getElementById('contactForm').reset(); // Clear the form
+        } else {
+            document.getElementById('form-status').textContent = "Failed to send message.";
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('form-status').textContent = "Error occurred while sending message.";
+    });
+});
+</script>
+

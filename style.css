@@ -38,7 +38,8 @@
         .header {
             background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
             color: #fff;
-            height: 100vh;
+            height: auto;
+            min-height: 100vh;
         }
         .header-content {
             display: flex;
@@ -47,7 +48,7 @@
             flex-direction: column; /* Stack logo and title vertically */
         }
         .header h1 {
-            font-size: 72px;
+            font-size: 58px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
@@ -58,7 +59,7 @@
             margin-bottom: 50px; /* Space between logo and title */
         }
         .header p {
-            font-size: 24px;
+            font-size: 20px;
             max-width: 600px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
