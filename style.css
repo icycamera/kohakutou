@@ -35,7 +35,7 @@
             margin-top: 40px;
         }
         
-        /* make text size responsive */
+        /* make section title text size responsive */
         @media screen and (min-width: 601px) {
             .section-title {
             font-size: 40px;
@@ -46,7 +46,7 @@
 
         }
 
-        /* make text size responsive */
+        /* make section title text size responsive */
         @media screen and (max-width: 600px) {
             .section-title {
             font-size: 32px;
@@ -66,12 +66,20 @@
             color: #fff;
             border: none;
             border-radius: 50%;
+            width: 50px; /* Set a fixed width */
+            height: 50px; /* Set a fixed height */
+            display: flex; /* Center the content */
+            justify-content: center; /* Center the icon horizontally */
+            align-items: center; /* Center the icon vertically */
+
             padding: 15px;
             font-size: 20px;
             cursor: pointer;
             z-index: 1000;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        
 
 
 
