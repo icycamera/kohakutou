@@ -97,17 +97,18 @@
             text-align: left;
         }
         .kohakutou-intro button {
-            background: #e67e22;
+            background: #E17692;
             padding: 15px 30px;
             border: none;
-            font-size: 24px;
+            font-size: 20px;
+            font-weight: bold;
             color: #fff;
             cursor: pointer;
             transition: background 0.3s ease;
             border-radius: 50px;
         }
         .kohakutou-intro button:hover {
-            background: #d35400;
+            background: #61B8D8;
         }
 
 
