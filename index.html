@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="kohakutou Landing Page">
+    <meta name="description" content="短歌同人誌「琥珀糖」のサイトです">
     <title>短歌同人誌「琥珀糖」</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Floating Menu Button -->
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <!-- Hidden Menu -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#eyecatch">トップ</a></li>
+            <li><a href="#newest-issue">最新号</a></li>
+            <li><a href="#news">ニュース</a></li>
+            <li><a href="#about">琥珀糖について</a></li>
+            <li><a href="#declaration">琥珀糖宣言</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </div>
+
     <!-- Eyecatch Section -->
-    <section class="header">
-        <div class="header-content">
-            <img src="images/kohakutou_logo.png" alt="Kohakutou Logo"> <!-- Replace 'logo.png' with your logo file -->
+    <section class="eyecatch" id="eyecatch">
+        <div class="eyecatch-content">
+            <img src="images/kohakutou_logo_white.png" alt="Kohakutou Logo"> <!-- Replace 'logo.png' with your logo file -->
             <h1>短歌同人誌<br class="mobile-break">「琥珀糖」</h1>
             <p>一行程度で琥珀糖の紹介を行います、一行程度で琥珀糖の紹介を行います</p>
         </div>
     </section>
 
-    <!-- 最新号紹介 -->
-    <section class="kohakutou-intro">
+    <!-- newest issue -->
+    <section class="newest-issue" id="newest-issue">
         <h2 class="section-title">「琥珀糖」創刊号　<br class="mobile-break">2024年12月1日発売</h2>
-        <div class="kohakutou-intro-content">
+        <div class="newest-issue-content">
             <img src="images/kohakutou_icon.png" alt="琥珀糖表紙">
-            <div class="kohakutou-intro-text">
+            <div class="newest-issue-text">
                 <p>琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります琥珀糖創刊号の紹介文が入ります</p>
                 <button onclick="window.location.href='https://example-ec-page.com'">購入サイトへ</button>
             </div>
@@ -30,7 +46,7 @@
     </section>
 
     <!-- News Section -->
-    <section class="news-section">
+    <section class="news" id="news">
         <h2 class="section-title">ニュース</h2>
         <div class="news-items">
             <div class="news-item">
@@ -58,18 +74,18 @@
     
 
     <!-- 琥珀糖とは-->
-    <section class="author-intro">
+    <section class="about" id="about">
         <h2 class="section-title">短歌同人誌<br class="mobile-break">「琥珀糖」とは</h2>
-        <div class="author-intro-content">
+        <div class="about-content">
             <img src="images/maigo.jpg" alt="秋月祐一紹介">
-            <div class="author-intro-text">
+            <div class="about-text">
                 <p>琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります琥珀糖の紹介文が入ります</p>
             </div>
         </div>
     </section>
 
     <!-- Message from the Author -->
-    <section class="author-message">
+    <section class="declaration" id="declaration">
         
         <h2 class="section-title">琥珀糖宣言</h2>
         <p>〜創刊に寄せて〜</p>
@@ -86,7 +102,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="contact-section">
+    <section class="contact" id="contact">
         <h2 class="section-title">お問い合わせ</h2>
         <form>
             <input type="text" name="name" placeholder="お名前" required>
@@ -111,37 +127,14 @@
         </div>
     </footer>
 
+
+    <!-- JavaScript to Toggle the Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
 </body>
 </html>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting in the traditional way
-
-    // Get the form data
-    const formData = new FormData(this);
-
-    // Display a loading message
-    document.getElementById('form-status').textContent = "Sending message...";
-
-    // Send the form data using fetch (AJAX request)
-    fetch('https://your-backend-endpoint.com/contact', {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            document.getElementById('form-status').textContent = "Message sent successfully!";
-            document.getElementById('contactForm').reset(); // Clear the form
-        } else {
-            document.getElementById('form-status').textContent = "Failed to send message.";
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('form-status').textContent = "Error occurred while sending message.";
-    });
-});
-</script>
-

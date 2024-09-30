@@ -35,30 +35,148 @@
             margin-top: 40px;
         }
         
+        /* make text size responsive */
+        @media screen and (min-width: 601px) {
+            .section-title {
+            font-size: 40px;
+            max-width: 90%
+            margin-bottom: 20px;
+            margin-top: 40px;
+            }
+
+        }
+
+        /* make text size responsive */
+        @media screen and (max-width: 600px) {
+            .section-title {
+            font-size: 32px;
+            max-width: 90%
+            margin-bottom: 20px;
+            margin-top: 40px;
+            }
+        }
+        
+        
+        /* Menu Button Styling */
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #153461;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+         /* Floating Menu Styling */
+        .menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background: rgba(21, 52, 97, 0.8);
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            z-index: 999;
+        }
+        .menu ul {
+            list-style: none;
+        }
+        .menu ul li {
+            margin-bottom: 15px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .menu ul li a:hover {
+            color: #BD94BB;
+        }
+
+
+
+
+
+        /* eyecatch Section */
+        .eyecatch {
+            background: url('ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+        .eyecatch-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .eyecatch h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .eyecatch img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .eyecatch p {
+            font-size: 24px;
+            max-width: 600px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+
         
         /* Eyecatch Section */
-        .header {
+        .eyecatch {
             background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
             color: #fff;
         }
-        .header-content {
+        .eyecatch-content {
             display: flex;
             align-items: center; /* Center logo and title vertically */
             justify-content: center;
             flex-direction: column; /* Stack logo and title vertically */
         }
-        .header h1 {
-            font-size: 58px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        
+        /* make text size responsive*/
+        @media screen and (min-width: 601px) {
+            .eyecatch h1 {
+                font-size: 58px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
         }
-        .header img {
+
+        /* make text size responsive */
+        @media screen and (max-width: 600px) {
+            .eyecatch h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+        }
+        .eyecatch img {
             width: 150px; /* Adjust logo size */
             height: 150px; /* Maintain square aspect ratio */
             margin-top: 70px;
             margin-bottom: 50px; /* Space between logo and title */
+            -webkit-filter: drop-shadow(2px 2px 5px #222);
+            filter: drop-shadow(2px 2px 5px #222);
         }
-        .header p {
+        .eyecatch p {
             font-size: 20px;
             max-width: 600px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -67,11 +185,11 @@
         
         
         /* 最新号告知 */
-        .kohakutou-intro {
+        .newest-issue {
             background: linear-gradient(#fff, #D3D3E2);
             color: #000;
         }
-        .kohakutou-intro-content {
+        .newest-issue-content {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -79,22 +197,22 @@
             gap: 30px;
             padding: 20px;
         }
-        .kohakutou-intro img {
+        .newest-issue img {
             width: 300px;
             height: auto;
             border: 2px solid #ddd;
             border-radius: 10px;
             margin-bottom: 20px;
         }
-        .kohakutou-intro-text {
+        .newest-issue-text {
             max-width: 600px;
         }
-        .kohakutou-intro-text p {
+        .newest-issue-text p {
             font-size: 22px;
             margin-bottom: 30px;
             text-align: left;
         }
-        .kohakutou-intro button {
+        .newest-issue button {
             background: #E17692;
             padding: 15px 30px;
             border: none;
@@ -105,20 +223,20 @@
             transition: background 0.3s ease;
             border-radius: 50px;
         }
-        .kohakutou-intro button:hover {
+        .newest-issue button:hover {
             background: #61B8D8;
         }
 
 
 
          /* News Section Styling */
-        .news-section {
+        .news {
             background: linear-gradient(#99CDE8, #61B8D8);
             color: #000;
             text-align: center;
             padding: 20px;
         }
-        .news-section h2 {
+        .news h2 {
             font-size: 48px;
             margin-bottom: 30px;
         }
@@ -204,39 +322,40 @@
 
 
         /* 琥珀糖について */
-        .author-intro {
+        .about {
             background: url('images/header.png') no-repeat center center/cover;
             color: #000;
         }
-        .author-intro-content {
+        .about-content {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 30px;
             padding: 20px;
+            text-align: left;
         }
-        .author-intro img {
+        .about img {
             width: 300px;
             height: auto;
             border: 2px solid #ddd;
             
             margin-bottom: 20px;
         }
-        .author-intro-text {
+        .about-text {
             max-width: 600px;
         }
-        .author-intro-text p {
+        .about-text p {
             font-size: 24px;
             line-height: 1.6;
         }
         
         
         /* 琥珀糖宣言 */
-        .author-message {
+        .declaration {
             background: linear-gradient(#E17692, #BD94BB);
         }
-        .author-message p {
+        .declaration p {
             font-size: 17px;
             max-width: 800px;
             margin-bottom:1em;
@@ -245,15 +364,15 @@
         
         
         /* Contact Section */
-        .contact-section {
+        .contact {
             background: #93C572;
         }
-        .contact-section form {
+        .contact form {
             width: 100%;
             max-width: 600px;
             margin-top:30px;
         }
-        .contact-section input, .contact-section textarea {
+        .contact input, .contact textarea {
             width: calc(100% - 40px);
             padding: 15px;
             margin: 10px 20px;
@@ -262,7 +381,7 @@
             font-size: 18px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .contact-section button {
+        .contact button {
             padding: 15px 30px;
             margin: 20px;
             border: none;
@@ -273,7 +392,7 @@
             border-radius: 50px;
             transition: background 0.3s ease;
         }
-        .contact-section button:hover {
+        .contact button:hover {
             background: #34495e;
         }
 
