@@ -1,0 +1,316 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        
+        /* General Styling */
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            width: 100vw;
+  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+        }
+        .section-title {
+            font-size: 40px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        
+        
+        /* Eyecatch Section */
+        .header {
+            background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+        }
+        .header-content {
+            display: flex;
+            align-items: center; /* Center logo and title vertically */
+            justify-content: center;
+            flex-direction: column; /* Stack logo and title vertically */
+        }
+        .header h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .header img {
+            width: 150px; /* Adjust logo size */
+            height: 150px; /* Maintain square aspect ratio */
+            margin-top: 70px;
+            margin-bottom: 50px; /* Space between logo and title */
+        }
+        .header p {
+            font-size: 24px;
+            max-width: 600px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        
+        
+        /* 最新号告知 */
+        .kohakutou-intro {
+            background: linear-gradient(#fff, #D3D3E2);
+            color: #000;
+            height: auto;
+        }
+        .kohakutou-intro-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .kohakutou-intro img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .kohakutou-intro-text {
+            max-width: 600px;
+        }
+        .kohakutou-intro-text p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .kohakutou-intro button {
+            background: #e67e22;
+            padding: 15px 30px;
+            border: none;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border-radius: 50px;
+        }
+        .kohakutou-intro button:hover {
+            background: #d35400;
+        }
+
+
+
+         /* News Section Styling */
+        .news-section {
+            background: linear-gradient(#99CDE8, #61B8D8);
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+        }
+        .news-section h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .news-items {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Ensure news items have equal height */
+            gap: 30px;
+            overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+            margin-bottom: 40px; /* Add space below the news items */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .news-item {
+            background: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Make each news item flex equally */
+            min-width: 300px;
+            max-width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item:hover {
+            transform: translateY(-10px); /* Add hover effect */
+        }
+        .news-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .news-item p {
+            font-size: 18px;
+            line-height: 1.6;
+            flex-grow: 1; /* Allow paragraphs to take up remaining space */
+        }
+        .news-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        /* Twitter Button Styling */
+        .twitter-button {
+            background: #000; /* Twitter's brand color */
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            display: inline-block;
+            margin-bottom:30px;
+        }
+        .twitter-button:hover {
+            background: #333; /* Darker shade on hover */
+        }
+
+        /* Responsive Design: Stack News Panels Vertically on Smaller Screens */
+        @media (max-width: 768px) {
+            .news-items {
+                flex-direction: column; /* Stack news items vertically */
+                align-items: center; /* Center align the items */
+            }
+            .news-item {
+                min-width: 90%; /* Make each item take up most of the width */
+                max-width: 90%;
+                margin-bottom: 20px; /* Add space between stacked news items */
+            }
+        }
+        
+         @media screen and (min-width: 768px)  {
+        .mobile-break { display: none; }
+        }
+
+
+
+        /* 琥珀糖について */
+        .author-intro {
+            background: url('images/header.png') no-repeat center center/cover;
+            color: #000;
+            height: auto;
+        }
+        .author-intro-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .author-intro img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            
+            margin-bottom: 20px;
+        }
+        .author-intro-text {
+            max-width: 600px;
+        }
+        .author-intro-text p {
+            font-size: 24px;
+            line-height: 1.6;
+        }
+        
+        
+        /* 琥珀糖宣言 */
+        .author-message {
+            background: linear-gradient(#E17692, #BD94BB);
+        }
+        .author-message p {
+            font-size: 17px;
+            max-width: 800px;
+            margin-bottom:1em;
+        }
+        
+        
+        
+        /* Contact Section */
+        .contact-section {
+            background: #93C572;
+        }
+        .contact-section form {
+            width: 100%;
+            max-width: 600px;
+        }
+        .contact-section input, .contact-section textarea {
+            width: calc(100% - 40px);
+            padding: 15px;
+            margin: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-section button {
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            background: #2c3e50;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+        .contact-section button:hover {
+            background: #34495e;
+        }
+
+
+
+       /* Footer Styling */
+        .footer {
+            background-color: #333; /* Dark background for footer */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer img {
+            width: 80px; /* Adjust logo size */
+            height: 80px; /* Maintain square aspect ratio */
+            margin-bottom: 15px; /* Space between logo and social icons */
+        }
+        .footer h2 {
+            margin-bottom: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px; /* Adjust icon size */
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 40px; /* Size for social media icons */
+            height: 40px;
+        }
+        .copyright {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
