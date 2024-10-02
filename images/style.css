@@ -1,0 +1,448 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        
+        /* General Styling */
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            width: 100vw;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+        }
+        .section-title {
+            font-size: 40px;
+            max-width: 90%
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        
+        /* make section title text size responsive */
+        @media screen and (min-width: 601px) {
+            .section-title {
+            font-size: 40px;
+            max-width: 90%
+            margin-bottom: 20px;
+            margin-top: 40px;
+            }
+
+        }
+
+        /* make section title text size responsive */
+        @media screen and (max-width: 600px) {
+            .section-title {
+            font-size: 32px;
+            max-width: 90%
+            margin-bottom: 20px;
+            margin-top: 40px;
+            }
+        }
+        
+        
+        /* Menu Button Styling */
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #153461;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px; /* Set a fixed width */
+            height: 50px; /* Set a fixed height */
+            display: flex; /* Center the content */
+            justify-content: center; /* Center the icon horizontally */
+            align-items: center; /* Center the icon vertically */
+
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+
+
+
+         /* Floating Menu Styling */
+        .menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background: rgba(21, 52, 97, 0.8);
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            z-index: 999;
+        }
+        .menu ul {
+            list-style: none;
+        }
+        .menu ul li {
+            margin-bottom: 15px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .menu ul li a:hover {
+            color: #BD94BB;
+        }
+
+
+
+
+
+        /* eyecatch Section */
+        .eyecatch {
+            background: url('ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+        .eyecatch-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .eyecatch h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .eyecatch img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .eyecatch p {
+            font-size: 24px;
+            max-width: 600px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+
+        
+        /* Eyecatch Section */
+        .eyecatch {
+            background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+        .eyecatch-content {
+            display: flex;
+            align-items: center; /* Center logo and title vertically */
+            justify-content: center;
+            flex-direction: column; /* Stack logo and title vertically */
+        }
+        
+        /* make text size responsive*/
+        @media screen and (min-width: 601px) {
+            .eyecatch h1 {
+                font-size: 58px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+        }
+
+        /* make text size responsive */
+        @media screen and (max-width: 600px) {
+            .eyecatch h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+        }
+        .eyecatch img {
+            width: 150px; /* Adjust logo size */
+            height: 150px; /* Maintain square aspect ratio */
+            margin-top: 70px;
+            margin-bottom: 50px; /* Space between logo and title */
+            -webkit-filter: drop-shadow(2px 2px 5px #222);
+            filter: drop-shadow(2px 2px 5px #222);
+        }
+        .eyecatch p {
+            font-size: 20px;
+            max-width: 600px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        
+        
+        /* 最新号告知 */
+        .newest-issue {
+            background: linear-gradient(#fff, #D3D3E2);
+            color: #000;
+        }
+        .newest-issue-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .newest-issue img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .newest-issue-text {
+            max-width: 600px;
+        }
+        .newest-issue-text p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .newest-issue button {
+            background: #E17692;
+            padding: 15px 30px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border-radius: 50px;
+        }
+        .newest-issue button:hover {
+            background: #61B8D8;
+        }
+
+
+
+         /* News Section Styling */
+        .news {
+            background: linear-gradient(#99CDE8, #61B8D8);
+            color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+        .news h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .news-items {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Ensure news items have equal height */
+            gap: 30px;
+            margin-bottom: 40px; /* Add space below the news items */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .news-item {
+            background: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Make each news item flex equally */
+            min-width: 300px;
+            max-width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item:hover {
+            transform: translateY(-10px); /* Add hover effect */
+        }
+        .news-item .post-date {
+            font-size: 16px;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px; /* Add some space below the date */
+        }
+        .news-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .news-item p {
+            font-size: 18px;
+            line-height: 1.6;
+            flex-grow: 1; /* Allow paragraphs to take up remaining space */
+        }
+        .news-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        /* Twitter Button Styling */
+        .twitter-button {
+            background: #000; /* Twitter's brand color */
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            display: inline-block;
+            margin-bottom:30px;
+        }
+        .twitter-button:hover {
+            background: #333; /* Darker shade on hover */
+        }
+
+        /* Responsive Design: Stack News Panels Vertically on Smaller Screens */
+        @media (max-width: 768px) {
+            .news-items {
+                flex-direction: column; /* Stack news items vertically */
+                align-items: center; /* Center align the items */
+            }
+            .news-item {
+                min-width: 90%; /* Make each item take up most of the width */
+                max-width: 90%;
+                margin-bottom: 20px; /* Add space between stacked news items */
+            }
+        }
+        
+         @media screen and (min-width: 768px)  {
+        .mobile-break { display: none; }
+        }
+
+
+
+        /* 琥珀糖について */
+        .about {
+            background: url('images/header.png') no-repeat center center/cover;
+            color: #000;
+        }
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+            text-align: left;
+        }
+        .about img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            
+            margin-bottom: 20px;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .about-text p {
+            font-size: 24px;
+            line-height: 1.6;
+        }
+        
+        
+        /* 琥珀糖宣言 */
+        .declaration {
+            background: linear-gradient(#E17692, #BD94BB);
+        }
+        .declaration p {
+            font-size: 17px;
+            max-width: 800px;
+            margin-bottom:1em;
+        }
+        
+        
+        
+        /* Contact Section */
+        .contact {
+            background: #93C572;
+        }
+        .contact form {
+            width: 100%;
+            max-width: 600px;
+            margin-top:30px;
+        }
+        .contact input, .contact textarea {
+            width: calc(100% - 40px);
+            padding: 15px;
+            margin: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact button {
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            background: #2c3e50;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+        .contact button:hover {
+            background: #34495e;
+        }
+
+
+
+       /* Footer Styling */
+        .footer {
+            background-color: #333; /* Dark background for footer */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer img {
+            width: 80px; /* Adjust logo size */
+            height: 80px; /* Maintain square aspect ratio */
+            margin-bottom: 15px; /* Space between logo and social icons */
+        }
+        .footer h2 {
+            margin-bottom: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px; /* Adjust icon size */
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px; /* Size for social media icons */
+            height: 30px;
+        }
+        .copyright {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
