@@ -63,3 +63,44 @@
         .back-button:hover {
             background-color: #61B8D8;
         }
+
+
+      /* Footer Styling */
+        .footer {
+            background-color: #333; /* Dark background for footer */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer img {
+            width: 80px; /* Adjust logo size */
+            height: 80px; /* Maintain square aspect ratio */
+            margin-bottom: 15px; /* Space between logo and social icons */
+        }
+        .footer h2 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px; /* Adjust icon size */
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px; /* Size for social media icons */
+            height: 30px;
+        }
+        .copyright {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
