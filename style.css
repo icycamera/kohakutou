@@ -432,8 +432,8 @@
             text-decoration: none;
         }
         .social-icons img {
-            width: 40px; /* Size for social media icons */
-            height: 40px;
+            width: 30px; /* Size for social media icons */
+            height: 30px;
         }
         .copyright {
             margin-top: 15px;
