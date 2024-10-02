@@ -67,7 +67,7 @@
             border: none;
             border-radius: 50%;
             width: 50px; /* Set a fixed width */
-            height: 50px; /* Set a fixed height */
+            height: 50px;
             display: flex; /* Center the content */
             justify-content: center; /* Center the icon horizontally */
             align-items: center; /* Center the icon vertically */
@@ -177,10 +177,10 @@
             }
         }
         .eyecatch img {
-            width: 150px; /* Adjust logo size */
-            height: 150px; /* Maintain square aspect ratio */
+            width: 150px; 
+            height: 150px; 
             margin-top: 70px;
-            margin-bottom: 50px; /* Space between logo and title */
+            margin-bottom: 50px; 
             -webkit-filter: drop-shadow(2px 2px 5px #222);
             filter: drop-shadow(2px 2px 5px #222);
         }
@@ -253,7 +253,7 @@
             justify-content: center;
             align-items: stretch; /* Ensure news items have equal height */
             gap: 30px;
-            margin-bottom: 40px; /* Add space below the news items */
+            margin-bottom: 40px;
             flex-wrap: wrap; /* Allow items to wrap on smaller screens */
         }
         .news-item {
@@ -277,7 +277,7 @@
             font-size: 16px;
             font-style: italic;
             color: #777;
-            margin-bottom: 15px; /* Add some space below the date */
+            margin-bottom: 15px; 
         }
         .news-item h3 {
             font-size: 24px;
@@ -302,7 +302,7 @@
             font-weight: bold;
         }
         .read-more a:hover {
-            color: #000w;
+            color: #000;
             text-decoration: none;
         }
 
@@ -310,7 +310,7 @@
         
         /* Twitter Button Styling */
         .twitter-button {
-            background: #000; /* Twitter's brand color */
+            background: #000;
             border: none;
             color: #fff;
             padding: 15px 30px;
@@ -323,19 +323,19 @@
             margin-bottom:30px;
         }
         .twitter-button:hover {
-            background: #333; /* Darker shade on hover */
+            background: #333; 
         }
 
         /* Responsive Design: Stack News Panels Vertically on Smaller Screens */
         @media (max-width: 768px) {
             .news-items {
                 flex-direction: column; /* Stack news items vertically */
-                align-items: center; /* Center align the items */
+                align-items: center; 
             }
             .news-item {
-                min-width: 90%; /* Make each item take up most of the width */
+                min-width: 90%; 
                 max-width: 90%;
-                margin-bottom: 20px; /* Add space between stacked news items */
+                margin-bottom: 20px;
             }
         }
         
@@ -424,15 +424,15 @@
 
        /* Footer Styling */
         .footer {
-            background-color: #333; /* Dark background for footer */
+            background-color: #333; 
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         .footer img {
-            width: 80px; /* Adjust logo size */
-            height: 80px; /* Maintain square aspect ratio */
-            margin-bottom: 15px; /* Space between logo and social icons */
+            width: 80px; 
+            height: 80px;
+            margin-bottom: 15px;
         }
         .footer h2 {
             margin-bottom: 15px;
@@ -444,11 +444,11 @@
         }
         .social-icons a {
             color: #fff;
-            font-size: 24px; /* Adjust icon size */
+            font-size: 24px;
             text-decoration: none;
         }
         .social-icons img {
-            width: 30px; /* Size for social media icons */
+            width: 30px;
             height: 30px;
         }
         .copyright {
