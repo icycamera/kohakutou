@@ -1,0 +1,65 @@
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#E17692, #BD94BB);
+        }
+        header {
+            background-color: #333;
+            background: url('blog-images/header.png') no-repeat center center/cover;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 80px; /* Adjust the size of the logo */
+            height: 80px; /* Maintain square dimensions */
+            display: block;
+            margin: 10px auto;
+
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .meta {
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 30px;
+        }
+        .content img {
+            display: block; /* Centers the image */
+            width:400px;
+            max-width: 100%; /* Makes the image responsive */
+            height: auto; /* Maintains aspect ratio */
+            margin: 20px auto; /* Adds space above and below the image */
+        }
+        figure {
+            text-align: center; /* Centers the caption */
+        }
+        .back-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px 15px;
+            text-align: center;
+            background-color: #E17692;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .back-button:hover {
+            background-color: #61B8D8;
+        }
