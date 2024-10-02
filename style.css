@@ -273,6 +273,12 @@
         .news-item:hover {
             transform: translateY(-10px); /* Add hover effect */
         }
+        .news-item .post-date {
+            font-size: 16px;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px; /* Add some space below the date */
+        }
         .news-item h3 {
             font-size: 24px;
             margin-bottom: 15px;
