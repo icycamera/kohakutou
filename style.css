@@ -289,13 +289,23 @@
             flex-grow: 1; /* Allow paragraphs to take up remaining space */
         }
         .news-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .news-item a:hover {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .read-more a {
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
         }
-        .news-item a:hover {
-            text-decoration: underline;
+        .read-more a:hover {
+            color: #000w;
+            text-decoration: none;
         }
+
         
         
         /* Twitter Button Styling */
