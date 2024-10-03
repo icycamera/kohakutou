@@ -7,6 +7,7 @@
     <title>短歌同人誌「琥珀糖」</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -127,12 +128,18 @@
     <!-- Contact Form -->
     <section class="contact" id="contact">
         <h2 class="section-title">お問い合わせ</h2>
-        <form>
+        <form method="post" action="https://forms.un-static.com/forms/e8befebd7fe871c17259beeb5754e26985cab365">
             <input type="text" name="name" placeholder="お名前" required>
             <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" placeholder="メッセージ" rows="5" required></textarea>
+            <div class="g-recaptcha" data-sitekey="6LdwOVYqAAAAADKcfzLx3FkWrblXPJvrcYf6-wke"></div>
+            <br>
             <button type="submit">送信</button>
+            <div class="text-center">
+                <p><small>(Powered by <a rel="nofollow" href="https://un-static.com/" target="_blank">Un-static Forms</a>)</small></p>
+             </div>
         </form>
+        
     </section>
     
     

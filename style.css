@@ -391,6 +391,16 @@
         .contact {
             background: #93C572;
         }
+        .contact a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            color: #E17692;
+            text-decoration: underline;
+        }
+
         .contact form {
             width: 100%;
             max-width: 600px;
@@ -419,6 +429,15 @@
         .contact button:hover {
             background: #E17692;
         }
+        .contact .g-recaptcha {
+            display: inline-block;
+            margin-right:auto; 
+            margin-left:auto;
+            text-align: center;
+        }
+        
+        
+        
 
 
 
