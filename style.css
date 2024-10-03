@@ -271,11 +271,11 @@
      margin-bottom: 15px;
 }
  .news-item h3 {
-     font-size: 24px;
+     font-size: 20px;
      margin-bottom: 15px;
 }
  .news-item p {
-     font-size: 18px;
+     font-size: 14px;
      line-height: 1.6;
      flex-grow: 1;    /* Allow paragraphs to take up remaining space */
 }
@@ -441,10 +441,17 @@
      margin-bottom: 10px;
      color: #000;
 }
+
+.author-emoji {
+    font-size: 24px; 
+    margin-right: 10px; 
+    line-height: 1; 
+}
  .author-card p.author-bio {
      font-size: 14px;
      color: #666;
      margin-bottom: 15px;
+     text-align: left;
 }
  .twitter-link {
      color: #1da1f2;
