@@ -48,13 +48,31 @@
             font-weight: bold;
             color: #61B8D8;
         }
-        .content img {
-            display: block; /* Centers the image */
-            width:autopx;
-            max-width: 90%; /* Makes the image responsive */
-            height: auto; /* Maintains aspect ratio */
-            margin: 20px auto; /* Adds space above and below the image */
+        
+        /* Make image size responsive */
+        
+        @media screen and (min-width: 601px) {
+            .content img {
+                display: block; 
+                width:auto;
+                max-width: 600px; 
+                height: auto;
+                margin: 20px auto; 
+            }
+
         }
+        
+        @media screen and (max-width: 600px) {
+            .content img {
+                display: block; 
+                width:auto;
+                max-width: 100%; 
+                height: auto;
+                margin: 20px auto;
+            }
+
+        }
+        
         figure {
             text-align: center; /* Centers the caption */
         }
