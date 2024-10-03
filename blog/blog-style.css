@@ -38,15 +38,31 @@
         .content {
             margin-bottom: 30px;
         }
+        .content a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #E17692;
+        }
+        .content a:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: #61B8D8;
+        }
         .content img {
             display: block; /* Centers the image */
-            width:400px;
-            max-width: 100%; /* Makes the image responsive */
+            width:autopx;
+            max-width: 90%; /* Makes the image responsive */
             height: auto; /* Maintains aspect ratio */
             margin: 20px auto; /* Adds space above and below the image */
         }
         figure {
             text-align: center; /* Centers the caption */
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 15px;
+            border-left: 4px solid #61B8D8; 
+            background-color: #eee;
         }
         .back-button {
             display: block;
