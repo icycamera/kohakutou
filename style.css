@@ -11,6 +11,9 @@
      scroll-behavior: smooth;
 }
 
+ body, html p {
+     color:222;
+}
 
 /* General Styling */
  body {
@@ -25,7 +28,7 @@
      align-items: center;
      flex-direction: column;
      text-align: center;
-     color: #fff;
+     color: #333;
      padding: 20px;
      position: relative;
 }
@@ -110,7 +113,7 @@
 
 /* eyecatch Section */
  .eyecatch {
-     background: url('ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
+     background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
      color: #fff;
 }
  .eyecatch-content {
@@ -125,28 +128,17 @@
      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
  .eyecatch img {
-     width: 80px;
-     height: 80px;
-     margin-bottom: 20px;
+     width: 150px;
+     height: 150px;
+     margin-top: 70px;
+     margin-bottom: 50px;
+     -webkit-filter: drop-shadow(2px 2px 5px #222);
+     filter: drop-shadow(2px 2px 5px #222);
 }
  .eyecatch p {
-     font-size: 24px;
+     font-size: 20px;
      max-width: 600px;
      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-
-
-/* Eyecatch Section */
- .eyecatch {
-     background: url('images/ct_20181206-202700122_57esr.jpg') no-repeat center center/cover;
-     color: #fff;
-}
- .eyecatch-content {
-     display: flex;
-     align-items: center;    /* Center logo and title vertically */
-     justify-content: center;
-     flex-direction: column;    /* Stack logo and title vertically */
 }
 
 
@@ -166,26 +158,14 @@
          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 }
- .eyecatch img {
-     width: 150px;
-     height: 150px;
-     margin-top: 70px;
-     margin-bottom: 50px;
-     -webkit-filter: drop-shadow(2px 2px 5px #222);
-     filter: drop-shadow(2px 2px 5px #222);
-}
- .eyecatch p {
-     font-size: 20px;
-     max-width: 600px;
-     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
+
 
 
 
 /* 最新号告知 */
  .newest-issue {
      background: linear-gradient(#fff, #D3D3E2);
-     color: #000;
+     color: #222;
 }
  .newest-issue-content {
      display: flex;
@@ -230,7 +210,7 @@
 /* News Section Styling */
  .news {
      background: linear-gradient(#99CDE8, #61B8D8);
-     color: #000;
+     color: #222;
      text-align: center;
      padding: 20px;
 }
@@ -340,7 +320,7 @@
 /* 琥珀糖について */
  .about {
      background: url('images/header.png') no-repeat center center/cover;
-     color: #000;
+     color: #222;
 }
  .about-content {
      display: flex;
@@ -371,6 +351,7 @@
 /* 琥珀糖宣言 */
  .declaration {
      background: linear-gradient(#E17692, #BD94BB);
+     color: #fff;
 }
  .declaration p {
      font-size: 17px;
@@ -382,15 +363,16 @@
 
 
 /* Authors Section Styling */
- .authors-section {
-     background-color: #f9f9f9;
+ .members {
+     background-color: #153461;
+     background: linear-gradient(#153461, #61B8D8);
      padding: 50px 20px;
      text-align: center;
 }
- .authors-section h2 {
+ .members h2 {
      font-size: 36px;
      margin-bottom: 40px;
-     color: #333;
+     color: #fff;
 }
 
 /* Authors Section Styling */
@@ -440,7 +422,7 @@
 .author-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #000;
+    color: #222;
     display: flex; /* Use flexbox to center emoji and name */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -472,12 +454,26 @@
  .contact {
      background: #93C572;
 }
+ .contact p {
+     color: #333;
+     margin-top:1em;
+}
  .contact a {
-     color: #fff;
+     color: #E17692;
      text-decoration: underline;
      font-weight: bold;
 }
  .contact a:hover {
+     color: #61B8D8;
+     text-decoration: underline;
+     font-weight: bold;
+}
+ .contact .un-static a {
+     color: #fff;
+     text-decoration: underline;
+     font-weight: bold;
+}
+ .contact .un-static a:hover {
      color: #E17692;
      text-decoration: underline;
 }
