@@ -458,19 +458,19 @@
 
 /* Contact Section */
  .contact {
-     background: #93C572;
+     background: linear-gradient(#D3D3E2, #fff);
 }
  .contact p {
      color: #333;
      margin-top:1em;
 }
  .contact a {
-     color: #E17692;
+     color: #153461; 
      text-decoration: underline;
      font-weight: bold;
 }
  .contact a:hover {
-     color: #fff;
+     color: #E17692;
      text-decoration: underline;
      font-weight: bold;
 }
