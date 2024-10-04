@@ -321,6 +321,8 @@
  .about {
      background: url('images/header.png') no-repeat center center/cover;
      color: #222;
+     background-color:rgba(255,255,255,0.3);
+     background-blend-mode:lighten;
 }
  .about-content {
      display: flex;
@@ -330,13 +332,13 @@
      gap: 30px;
      padding: 20px;
      text-align: left;
-     background: rgba(255,255,255, 0.8);
 }
  .about img {
-     width: 300px;
+     width: 80%;
+     max-width: 350px;
      height: auto;
      border: 2px solid #ddd;
-     margin-bottom: 20px;
+
 }
  .about-text {
      max-width: 600px;
