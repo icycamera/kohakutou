@@ -128,18 +128,19 @@
      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
  .eyecatch img {
-     width: 150px;
-     height: 150px;
+     width: 180px;
+     height: 180px;
      margin-top: 70px;
      margin-bottom: 50px;
-     -webkit-filter: drop-shadow(2px 2px 5px #222);
-     filter: drop-shadow(2px 2px 5px #222);
+     -webkit-filter: drop-shadow(2px 2px 5px #111);
+     filter: drop-shadow(2px 2px 5px #111);
 }
  .eyecatch p {
      font-size: 22px;
-     font-weight: medium;
+     font-weight: 550;
      max-width: 600px;
-     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+     color: #fff;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -148,7 +149,7 @@
      .eyecatch h1 {
          font-size: 58px;
          margin-bottom: 20px;
-         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -156,7 +157,7 @@
      .eyecatch h1 {
          font-size: 48px;
          margin-bottom: 20px;
-         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 }
 
