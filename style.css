@@ -136,7 +136,8 @@
      filter: drop-shadow(2px 2px 5px #222);
 }
  .eyecatch p {
-     font-size: 20px;
+     font-size: 22px;
+     font-weight: medium;
      max-width: 600px;
      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
