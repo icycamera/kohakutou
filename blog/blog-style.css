@@ -93,6 +93,7 @@
             text-decoration: none;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
         }
         .back-button:hover {
             background-color: #61B8D8;
