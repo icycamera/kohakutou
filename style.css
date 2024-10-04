@@ -375,7 +375,6 @@
      color: #fff;
 }
 
-/* Authors Section Styling */
  .authors-grid {
      display: grid;
     /* Each card will take at least 250px, but fill available space */
@@ -433,6 +432,13 @@
     margin-right: 10px; 
     line-height: 1; 
 }
+
+.author-image {
+    width: 22px; 
+    height: 22px;
+    margin-right: 10px; 
+    }
+
  .author-card p.author-bio {
      font-size: 14px;
      color: #666;
