@@ -479,8 +479,13 @@
      text-decoration: underline;
      font-weight: bold;
 }
+ .contact .un-static p {
+     color: #777;
+     font-size: 10px;
+}
+
  .contact .un-static a {
-     color: #fff;
+     color: #777;
      text-decoration: underline;
      font-weight: bold;
 }
