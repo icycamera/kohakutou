@@ -98,6 +98,20 @@
         .back-button:hover {
             background-color: #61B8D8;
         }
+        
+         .article-list-link p {
+            text-align: center;
+        }
+         .article-list-link a {
+            color: #153461;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .article-list-link a:hover {
+            color: #61B8D8;
+        }
+
 
 
 

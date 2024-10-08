@@ -279,6 +279,15 @@
      text-decoration: none;
 }
 
+ .article-list-link a {
+     color: #153461;
+     text-decoration: underline;
+     font-weight: bold;
+}
+ .article-list-link a:hover {
+     color: #eee;
+}
+
 
 /* Twitter Button Styling */
  .twitter-button {
