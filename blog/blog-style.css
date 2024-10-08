@@ -100,6 +100,71 @@
         }
 
 
+
+        /* Article List */
+       .month-section {
+            margin-bottom: 40px;
+        }
+        .month-title {
+            background-color: #E17692;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .article-list {
+            padding-left: 20px;
+        }
+        .article-list li {
+            margin: 10px 0;
+        }
+        .article-list a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #E17692;
+        }
+        .article-list a:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: #61B8D8;
+        }
+
+
+
+
+
+        /* Pager Styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        .pagination a {
+            color: #E17692;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid #E17692;
+            margin: 0 5px;
+        }
+        .pagination a:hover {
+            background-color: #61B8D8;
+            color: #fff;
+        }
+        .pagination a.active {
+            background-color: #E17692;
+            color: white;
+        }
+        .pagination a.disabled {
+            color: #ccc;
+            pointer-events: none;
+            border-color: #ccc;
+        }
+        
+        
+        
+
       /* Footer Styling */
         .footer {
             background-color: #333; /* Dark background for footer */
